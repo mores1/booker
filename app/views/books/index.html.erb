@@ -4,9 +4,9 @@
   <tr>
     <th>Title</th>
     <th>Body</th>
-    <th>SHOW</th>
-    <th>EDIT</th>
-    <th>DESTROY</th>
+    <th></th>
+    <th></th>
+    <th></th>
   </tr>
 
   <% @books.each do |book| %>
@@ -28,7 +28,7 @@
 <h2>New book</h2>
 
 <% if @book.errors.any? %>
-  <%= @book.errors.count %>erros.
+  <%= @book.errors.count %>error prohibited this book from being saved:
   <ul>
     <% @book.errors.full_messages.each do |message| %>
       <li><%= message %></li>
